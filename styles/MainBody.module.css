@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 80%;
+    color: rgb(193, 189, 189);
+    z-index: 1;
+}
+
+.spacerDiv {
+    height: 104.5px;
+}
+
+.normalText {
+    font-size: 1em;
+}
+
+.name {
+    font-size: 4em;
+    color: rgb(163, 247, 103)
+    /* color: lightpink */
+}

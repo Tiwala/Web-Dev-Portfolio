@@ -1,0 +1,23 @@
+/* .filter {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:  #fe5757;
+    animation: colorChange 20s ease-in-out infinite;
+    animation-fill-mode: both;
+    mix-blend-mode: overlay;
+    Allows you to click behind overlay
+    pointer-events: none;
+  } */
+  
+  /* @keyframes colorChange {
+    0%,
+    100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: .9;
+    }
+  } */

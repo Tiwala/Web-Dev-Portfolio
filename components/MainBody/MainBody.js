@@ -10,8 +10,9 @@ const MainBody = () => {
         </div>
         <div className={styles.name}>Gerard C. San Juan</div>
         <div className={styles.normalText}>
-          I create
+          I create websites.
         </div>
+        <div className={styles.spacer}></div>
     </div>
   )
 }

@@ -3,6 +3,8 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import MainBody from '../components/MainBody/MainBody'
 import Experience from '../components/Experience/Experience'
+import About from '../components/About/About'
+import Projects from '../components/Projects/Projects'
 
 export default function Home() {
   return (
@@ -13,7 +15,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <MainBody/>
+      <About/>
       <Experience/>
+      <Projects/>
     </div>
   )
 }

@@ -23,9 +23,10 @@
 .tags {
     display: inline-block;
     position: relative;
+    transition: transform 0.25s;
 }
 
 .tags:hover {
     cursor: pointer;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }

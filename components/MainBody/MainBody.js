@@ -8,7 +8,7 @@ const MainBody = () => {
         <div className={styles.normalText}>
             Hi. I'm
         </div>
-        <div className={styles.name}>Gerard C. San Juan</div>
+        <div className={styles.name}>Gerard San Juan</div>
         <div className={styles.normalText}>
           I create websites.
         </div>

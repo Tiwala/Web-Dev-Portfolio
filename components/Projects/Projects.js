@@ -1,33 +1,39 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from '../../styles/Projects.module.css'
 import Image from 'next/image'
 
 const Projects = () => {
+    const [width, setWidth] = useState(658)
+    const [height, setHeight] = useState(370)
+
   return (
     <div className={styles.container}>
         <div className={styles.title}>
-            Projects
+            Featured Projects
         </div>
         <div className={styles.project}>
             <div className={styles.projectDescription}>
-                <p className={styles.featured}>Featured Project</p>
-                <h3 className={styles.projectTitle}>ProjectName</h3>
+                {/* <p className={styles.featured}>Featured Project</p> */}
+                <h3 className={styles.projectTitle}>Steam Page Clone</h3>
                 <div className={styles.projectText}>
                     <p>
-                        Kawaii Senpai chotto Sugoi fuzakeru Kawaii Ureshiii damaru Oniisan.
-                        Doko Daijobu Oniisan, Oniisan Senpai Oniisan Kawaii nii san damasu damaru 
-                        Tomodachi arigatou. Itadakimasu Ureshiii Ureshiii itadakimasu damaru Daijobu Tsundere kimochi Otaku Ureshiii
+                        Me and my team created a full stack working clone of Hogwarts Legacy's Steam page, with all links and effects fully functional. <br/>
+                        <br/>
+                        Almost indistinguishable from the original page, we wanted to test our ability to replicate an application regardless of framework and technologies.
                     </p>
                 </div>
                 <ul className={styles.techList}>
-                    <li>blah &nbsp;</li>
-                    <li>blah &nbsp;</li>
-                    <li>blah &nbsp;</li>
-                    <li>blah &nbsp;</li>
-                    <li>blah</li>
+                    <li>NextJS</li>
+                    <li>Tailwind</li>
+                    <li>Axios</li>
+                    <li>Recoil</li>
+                    <li>PSQL</li>
+                    <li>Expres</li>
+                    <li>NodeJS</li>
+                    <li>Render</li>
                 </ul>
                 <div className={styles.links}>
-                    <a className={styles.tags} href="https://github.com/Tiwala" aria-label="GitHub" target="_blank" rel="noreferrer">
+                    <a className={styles.tags} href="https://github.com/Tiwala/Steam-Clone" aria-label="GitHub" target="_blank" rel="noreferrer">
                       <svg fill="rgb(193, 189, 189)" width="25" height="25" viewBox="0 0 496 512">
                           <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 
                             4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 
@@ -46,32 +52,32 @@ const Projects = () => {
             </div>
             <div className={styles.projectImage}>
                 <a className={styles.imageLink} href="https://steam-clone-zqr0.onrender.com/" rel="noopener noreferrer" target="_blank">
-                    <div className={styles.overlay}>
-                        <Image src="/SteamClone.png" width={658} height={370}/>
-                    </div>
+                    <div className={styles.overlay} style={{width: width, height: height}}></div>
+                    <Image src="/SteamClone.png" width={width} height={height}/>
                 </a>
             </div>
         </div>
         <div className={styles.project}>
             <div className={styles.projectDescription}>
-                <p className={styles.featured}>Featured Project</p>
-                <h3 className={styles.projectTitle}>ProjectName</h3>
+                {/* <p className={styles.featured}>Featured Project</p> */}
+                <h3 className={styles.projectTitle}>Galvanize Instructor Hub</h3>
                 <div className={styles.projectText}>
                     <p>
-                        Kawaii Senpai chotto Sugoi fuzakeru Kawaii Ureshiii damaru Oniisan.
-                        Doko Daijobu Oniisan, Oniisan Senpai Oniisan Kawaii nii san damasu damaru 
-                        Tomodachi arigatou. Itadakimasu Ureshiii Ureshiii itadakimasu damaru Daijobu Tsundere kimochi Otaku Ureshiii
+                        The Galvanize Instructor Hub is an application that streamlines an instructor's task of recording and organizing data on student performance, synchronizing it with the Asana API. <br/>
+                        <br/>
+                        Through the application, instructors can create classes and profiles for students from the ground up, graphically illustrate data recorded from class and student performance, provide commentary feedback, and randomly generate groups for class work.
                     </p>
                 </div>
                 <ul className={styles.techList}>
-                    <li>blah &nbsp;</li>
-                    <li>blah &nbsp;</li>
-                    <li>blah &nbsp;</li>
-                    <li>blah &nbsp;</li>
-                    <li>blah</li>
+                    <li>NextJS</li>
+                    <li>Axios</li>
+                    <li>Recoil</li>
+                    <li>PSQL</li>
+                    <li>Postgres</li>
+                    <li>Render</li>
                 </ul>
                 <div className={styles.links}>
-                    <a className={styles.tags} href="https://github.com/Tiwala" aria-label="GitHub" target="_blank" rel="noreferrer">
+                    <a className={styles.tags} href="https://github.com/gschool-blue-ocean/instructor-hub" aria-label="GitHub" target="_blank" rel="noreferrer">
                       <svg fill="rgb(193, 189, 189)" width="25" height="25" viewBox="0 0 496 512">
                           <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 
                             4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 
@@ -90,32 +96,32 @@ const Projects = () => {
             </div>
             <div className={styles.projectImage}>
                 <a className={styles.imageLink} href="https://instructor-hub.onrender.com/" rel="noopener noreferrer" target="_blank">
-                    <div className={styles.overlay}>
-                        <Image src="/InstructorHub.png" width={658} height={370}/>
-                    </div>
+                    <div className={styles.overlay} style={{width: width, height: height}}></div>
+                    <Image src="/InstructorHub.png" width={658} height={370}/>
                 </a>
             </div>
         </div>
         <div className={styles.project}>
             <div className={styles.projectDescription}>
-                <p className={styles.featured}>Featured Project</p>
-                <h3 className={styles.projectTitle}>ProjectName</h3>
+                {/* <p className={styles.featured}>Featured Project</p> */}
+                <h3 className={styles.projectTitle}>The Weeblist</h3>
                 <div className={styles.projectText}>
                     <p>
-                        Kawaii Senpai chotto Sugoi fuzakeru Kawaii Ureshiii damaru Oniisan.
-                        Doko Daijobu Oniisan, Oniisan Senpai Oniisan Kawaii nii san damasu damaru 
-                        Tomodachi arigatou. Itadakimasu Ureshiii Ureshiii itadakimasu damaru Daijobu Tsundere kimochi Otaku Ureshiii
+                        The Weeblist is a full stack application that allows users to log in and create reviews for a database of anime. <br/>
+                        <br/>
+                        Inspired by Myanimelist, this was a small, passion full stack MVP.
                     </p>
                 </div>
                 <ul className={styles.techList}>
-                    <li>blah &nbsp;</li>
-                    <li>blah &nbsp;</li>
-                    <li>blah &nbsp;</li>
-                    <li>blah &nbsp;</li>
-                    <li>blah</li>
+                    <li>Vanilla JavaScript (ES6)</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>PSQL</li>
+                    <li>NodeJS</li>
+                    <li>Express</li>
                 </ul>
                 <div className={styles.links}>
-                    <a className={styles.tags} href="https://github.com/Tiwala" aria-label="GitHub" target="_blank" rel="noreferrer">
+                    <a className={styles.tags} href="https://github.com/Tiwala/Student-MVP-Project" aria-label="GitHub" target="_blank" rel="noreferrer">
                       <svg fill="rgb(193, 189, 189)" width="25" height="25" viewBox="0 0 496 512">
                           <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 
                             4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 
@@ -134,29 +140,30 @@ const Projects = () => {
             </div>
             <div className={styles.projectImage}>
                 <a className={styles.imageLink} href="https://nameless-basin-84867.herokuapp.com/" rel="noopener noreferrer" target="_blank">
-                    <div className={styles.overlay}>
-                        <Image src="/WeebList.png" width={658} height={370}/>
-                    </div>
+                    <div className={styles.overlay} style={{width: width, height: height}}></div>
+                    <Image src="/WeebList.png" width={658} height={370}/>
+
                 </a>
             </div>
         </div>
         <div className={styles.project}>
             <div className={styles.projectDescription}>
-                <p className={styles.featured}>Featured Project</p>
-                <h3 className={styles.projectTitle}>ProjectName</h3>
+                {/* <p className={styles.featured}>Featured Project</p> */}
+                <h3 className={styles.projectTitle}>1st Gen Pokedex</h3>
                 <div className={styles.projectText}>
                     <p>
-                        Kawaii Senpai chotto Sugoi fuzakeru Kawaii Ureshiii damaru Oniisan.
-                        Doko Daijobu Oniisan, Oniisan Senpai Oniisan Kawaii nii san damasu damaru 
-                        Tomodachi arigatou. Itadakimasu Ureshiii Ureshiii itadakimasu damaru Daijobu Tsundere kimochi Otaku Ureshiii
+                        The 1st Generation Pokedex app is a frontend application that shows the first 151 Pokemon, with their respective Pokedex information, including each individual Pokemon's cry from the original GameBoy Color games. <br/>
+                        All information was fetched externally from the PokeAPI. <br/>
+                        <br/>
+                        This was my very first MVP, and while it is quite basic, I love this project, as it is my childhood passion in its purest form put in practice.
                     </p>
                 </div>
                 <ul className={styles.techList}>
-                    <li>blah &nbsp;</li>
-                    <li>blah &nbsp;</li>
-                    <li>blah &nbsp;</li>
-                    <li>blah &nbsp;</li>
-                    <li>blah</li>
+                    <li>Vanilla JavaScript (ES6)</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>PokeAPI</li>
+                    <li>AJAX</li>
                 </ul>
                 <div className={styles.links}>
                     <a className={styles.tags} href="https://github.com/Tiwala" aria-label="GitHub" target="_blank" rel="noreferrer">
@@ -178,9 +185,8 @@ const Projects = () => {
             </div>
             <div className={styles.projectImage}>
                 <a className={styles.imageLink} href="https://trash-garbage.surge.sh/" rel="noopener noreferrer" target="_blank">
-                    <div className={styles.overlay}>
-                        <Image src="/1stGenPokeDex.png" width={658} height={370}/>
-                    </div>
+                    <div className={styles.overlay} style={{width: width, height: height}}></div>
+                    <Image src="/1stGenPokeDex.png" width={658} height={370}/>
                 </a>
             </div>
         </div>

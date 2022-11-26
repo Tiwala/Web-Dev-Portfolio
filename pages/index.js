@@ -5,6 +5,7 @@ import MainBody from '../components/MainBody/MainBody'
 import Experience from '../components/Experience/Experience'
 import About from '../components/About/About'
 import Projects from '../components/Projects/Projects'
+import Contact from '../components/Contact/Contact'
 
 export default function Home() {
   return (
@@ -16,8 +17,9 @@ export default function Home() {
       </Head>
       <MainBody/>
       <About/>
-      <Experience/>
+      {/* <Experience/> */}
       <Projects/>
+      <Contact/>
     </div>
   )
 }

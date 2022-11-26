@@ -1,31 +1,48 @@
 .container {
     display: flex;
+    /* margin-bottom: 30px; */
+    align-items: center;
+}
+
+.words {
+    display: flex;
     flex-direction: column;
+    width: 55%;
+    height: 500px;
 }
 
 .title {
     font-size: 3em;
     font-weight: bold;
     margin-bottom: 50px;
+    /* text-align: center; */
 }
 
 .about {
     display: flex;
     width: 100%;
-    margin-bottom: 30px;
     box-sizing: border-box;
+    align-items: center;
 }
 
 .text {
-    width: 60%;
-    padding: 5px;
+    box-shadow: 0 10px 30px -15px black;
+    position: relative;
+    z-index: 2;
+    padding: 15px;
+    width: 100%;
+    background-color: rgba(32, 24, 55, 0.85);
+    /* font-size: 12px; */
+    font-weight: 400;   
 }
 
 .skills {
+    display: flex;
     padding: 20px;
-    width: 40%;
+    width: 45%;
+    height: 100%;
 }
 
 .spacer {
-    height: 520px;
+    height: 104.5px;
 }

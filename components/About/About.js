@@ -1,27 +1,68 @@
-import React from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import styles from '../../styles/About.module.css'
 
 const About = () => {
+    // When using tagcloud, you have to do npm install TagCloud --save-dev
+    // Because of types error you have to use require
+    const TagCloud = require('TagCloud')
+    const texts = [
+        'JavaScript', 'ES5', 'ES6', 'React.js', 'Next.js', 'MongoDB',
+        'HTML5', 'CSS3', 'Node.js', 'Express', 'SQL', 'MySQL', 'PostgreSQL',
+        'REST', 'Surge', 'Heroku', 'Render', 'Git', 'GitHub', 'Mocha', 'Chai', 'Jest',
+        'npm', 'Bootstrap', 'Tailwind', 'Auth0', 'AJAX', 'Axios', 'Redux', 'Recoil',
+    ]
+    const options = {
+        radius: 250,
+        maxSpeed: 'fast',
+        initSpeed: 'normal',
+        direction: 225,
+        keep: true,
+    };
+
+    // const [options, changeOptions] = useState({
+    //     radius: 250,
+    //     maxSpeed: 'fast',
+    //     initSpeed: 'fast',
+    //     direction: 225,
+    //     keep: true,
+    // })
+    const IsTagCloudLoaded = useRef(false);
+
+    useEffect(() => {
+        if (IsTagCloudLoaded.current) return;
+
+        TagCloud('.tagCloud', texts, options);
+
+        IsTagCloudLoaded.current = true;
+    })
+
   return (
-    <div className={styles.container}>
-        <div className={styles.title}>
-            About
-        </div>
-        <div className={styles.about}>
-            <div className={styles.text}>
-                &nbsp; Kawaii Senpai chotto Sugoi fuzakeru Kawaii Ureshiii damaru Oniisan.
-                Doko Daijobu Oniisan, Oniisan Senpai Oniisan Kawaii nii san damasu damaru 
-                Tomodachi arigatou. Itadakimasu Ureshiii Ureshiii itadakimasu damaru Daijobu Tsundere kimochi Otaku Ureshiii, 
-                damaru Kawaii doki doki Tomodachi. Chikara Oniisan itadakimasu Otaku damasu, Baka Daijobu doki doki chotto Senpai damasu. Chotto Senpai chikara Tsundere nii san chikara doki doki doki doki. Itadakimasu Sugoi arigatou Tsundere okasan Tsundere chikara fuzakeru, doko Baka doko doko damaru. Damasu Tomodachi Sugoi Imoto, chikara Otaku Senpai damaru damasu Oppai Oniisan Daijobu Kawaii Sugoi. Okasan nii san arigatou Daijobu doko damasu Senpai chotto. Imoto Oniisan doki doki, Oniisan nii san chotto fuzakeru kimochi Senpai nii san doki doki.
+    <section class="about">
+        <div className={styles.container}>
+            <div className={styles.words}>
+                <div className={styles.title}>
+                    About
+                </div>
+                <div className={styles.about}>
+                    <div className={styles.text}>
+                            Hi! <br/>
+                            I'm Gerard, and I am a multi-faceted individual who creates things on the web. <br/>
+                            I've always been interested in the sciences, studying psychology and medicine, but somewhere along the way, software development captured my heart, and it never let go.
+                            <br/>
+                            <br/>
+                            My favorite aspect of this field is the fact that we can create solutions to problems great and small, making people's lives easier, and we can make that solution pretty while we're at it.
+                            <br/>
+                            <br/>
+                            I hope to one day create something that can make a lot of people happy.
+                    </div>
+                </div>
             </div>
             <div className={styles.skills}>
-                mahskills
+                <span className='tagCloud' id='skillsCanvas'></span>
             </div>
+            <div className={styles.spacer}></div>
         </div>
-        <div className={styles.spacer}>
-            
-        </div>
-    </div>
+    </section>
   )
 }
 

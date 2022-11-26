@@ -30,3 +30,24 @@
     cursor: pointer;
     transform: scale(1.1);
 }
+
+.emailDiv {
+    width: 40px;
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    left: auto;
+}
+
+.email {
+    writing-mode: vertical-rl;
+    margin: 10px;
+    text-decoration: underline;
+    letter-spacing: 0.1em;
+    transition: 0.25s;
+}
+
+.email:hover {
+    color: white;
+    cursor: pointer;
+}

@@ -15,6 +15,7 @@ body {
   color: rgb(193, 189, 189);
   position: relative;
   z-index: -1;
+  line-height: 1.4;
   /* background: linear-gradient(45deg, #6B4984,
   #483475 20%, #2B2F77, #141852, #070B34); */
 }
@@ -29,6 +30,19 @@ body {
   background: linear-gradient(to bottom, #000000 0%, #5788fe 100%);
 } */
 
+section {
+  min-height: 720px;
+  display: flex;
+  align-items: center;
+}
+
+/* #skillsCanvas {
+  margin: auto;
+  display: flex;
+  position: relative;
+  z-index: 2;
+} */
+
 a {
   color: inherit;
   text-decoration: none;
@@ -40,4 +54,9 @@ a {
 
 svg:hover {
   fill: white;
+}
+
+.tagCloud {
+  color: rgb(182, 88, 217);
+  text-shadow: 0 0 2px rgb(182, 88, 217);
 }

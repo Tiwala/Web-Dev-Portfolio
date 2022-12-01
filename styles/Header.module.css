@@ -1,10 +1,8 @@
-
-
 .header {
     display: flex;
     justify-content: space-between;
     background-color: rgba(32, 24, 55, 0.85);
-    width: 100%;
+    min-width: 100vw;
     height: 104px;
     box-shadow: 0 10px 30px -10px black;
     z-index: 1;
@@ -16,8 +14,6 @@
     justify-content: space-around;
     align-items: center;
     font-weight: bold;
-    width: 30%;
-    margin-right: 30px;
 }
 
 .logoDiv {
@@ -29,6 +25,7 @@
     line-height: 8px;
     color: rgb(193, 189, 189);
     position: relative;
+    margin: 2rem;
 }
 
 .nav:after {
@@ -54,7 +51,3 @@
     cursor: pointer;
     color: white;
 }
-
-/* .header a:hover {
-    cursor: pointer;
-} */

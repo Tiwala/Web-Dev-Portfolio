@@ -1,13 +1,12 @@
-/* html {
-  background: linear-gradient(45deg, #855988, #6B4984,
-  #483475, #2B2F77, #141852, #070B34);
-
-} */
+/* VERY IMPORTANT, you need the !important or else it won't work */
+html {
+  scroll-behavior: smooth !important;
+}
 
 html,
 body {
   padding: 0;
-  margin: 0;
+  margin: 0px auto;
   width: 100%;
   min-height: 100%;
   font-family: Arial, Helvetica, sans-serif;
@@ -16,32 +15,16 @@ body {
   position: relative;
   z-index: -1;
   line-height: 1.4;
-  /* background: linear-gradient(45deg, #6B4984,
-  #483475 20%, #2B2F77, #141852, #070B34); */
 }
 
-/* html, body {
-  margin: 0;
-  If you remove overflow scroll, the background repeats at the bottom
-  overflow: scroll !important;
-  width: 100%;
-  height: 100%;
-  background: black;
-  background: linear-gradient(to bottom, #000000 0%, #5788fe 100%);
-} */
-
 section {
-  min-height: 720px;
+  min-height: 100vh;
+  width: 80%;
+  margin: 0px auto;
   display: flex;
   align-items: center;
 }
 
-/* #skillsCanvas {
-  margin: auto;
-  display: flex;
-  position: relative;
-  z-index: 2;
-} */
 
 a {
   color: inherit;

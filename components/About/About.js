@@ -2,6 +2,9 @@ import React, { useState, useEffect, useRef } from 'react'
 import styles from '../../styles/About.module.css'
 
 const About = () => {
+    const [cloudRadius, setCloudRadius] = useState(225);
+    const [windowSize, setWindowSize] = useState(false)
+
     // When using tagcloud, you have to do npm install TagCloud --save-dev
     // Because of types error you have to use require
     const TagCloud = require('TagCloud')
@@ -12,32 +15,28 @@ const About = () => {
         'npm', 'Bootstrap', 'Tailwind', 'Auth0', 'AJAX', 'Axios', 'Redux', 'Recoil',
     ]
     const options = {
-        radius: 250,
-        maxSpeed: 'fast',
+        radius: cloudRadius,
+        maxSpeed: 'normal',
         initSpeed: 'normal',
         direction: 225,
         keep: true,
     };
 
-    // const [options, changeOptions] = useState({
-    //     radius: 250,
-    //     maxSpeed: 'fast',
-    //     initSpeed: 'fast',
-    //     direction: 225,
-    //     keep: true,
-    // })
     const IsTagCloudLoaded = useRef(false);
 
     useEffect(() => {
+        // If TagCloud is already there, ends useEffect
+        // If not, runs it
         if (IsTagCloudLoaded.current) return;
 
         TagCloud('.tagCloud', texts, options);
 
         IsTagCloudLoaded.current = true;
     })
+    
 
   return (
-    <section class="about">
+    <section className="about" id="about">
         <div className={styles.container}>
             <div className={styles.words}>
                 <div className={styles.title}>

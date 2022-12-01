@@ -1,8 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
 import styles from '../../styles/Header.module.css'
+import Link from 'next/link'
 
 const Header = () => {
+
+    
   return (
     <div className={styles.header}>
       <div className={styles.logoDiv}>
@@ -11,18 +14,18 @@ const Header = () => {
           </a>
       </div>
       <div className={styles.headerDiv}>
-          <a className={styles.nav}>
+          <Link className={styles.nav} href='#about'>
               About
-          </a>
-          <a className={styles.nav}>
-              Experience
-          </a>
-          <a className={styles.nav}>
+          </Link>
+          <Link className={styles.nav} href='#projects'>
               Projects
-          </a>
-          <a className={styles.nav}>
+          </Link>
+          <Link className={styles.nav} href='#contact'>
               Contact
-          </a>
+          </Link>
+          <Link className={styles.nav} href='https://drive.google.com/file/d/1FIW2agnwP8Fn9aQHo8jxSMfzEsR4R_1n/view?usp=sharing' target="_blank" rel="noreferrer">
+              Resume
+          </Link>
       </div>
     </div>
   )

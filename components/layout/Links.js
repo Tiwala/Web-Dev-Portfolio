@@ -1,10 +1,8 @@
-import React from 'react'
 import styles from '../../styles/Links.module.css'
-import Image from 'next/image'
 
 const Links = () => {
   return (
-    <>
+    <div className={styles.container}>
       <div className={styles.linksDiv}>
           <ul className={styles.list}>
               <li className={styles.listItem}>
@@ -40,7 +38,7 @@ const Links = () => {
           gerard.c.sanjuan@gmail.com
         </a>
       </div>
-    </>
+    </div>
   )
 }
 

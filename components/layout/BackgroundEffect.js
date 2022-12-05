@@ -72,7 +72,7 @@ const BackgroundEffect = () => {
         function getPreviousDot(id, stepback) {
             if (id == 0 || id - stepback < 0) return false;
             if (typeof dots[id - stepback] != "undefined") return dots[id - stepback];
-            else return false;//getPreviousDot(id - stepback);
+            else return false;
         }
         
         Dot.prototype.move = function() {
@@ -130,7 +130,6 @@ const BackgroundEffect = () => {
             ctx.shadowColor = "white";
             for (var i = 0; i < initStarsPopulation; i++) {
                 stars[i] = new Star(i, Math.floor(Math.random()*WIDTH), Math.floor(Math.random()*HEIGHT));
-                //stars[i].draw();
             }
             ctx.shadowBlur = 0;
             animate();
@@ -186,7 +185,6 @@ const BackgroundEffect = () => {
             dots[dots.length-1].draw();
             dots[dots.length-1].link();
         }
-        //setInterval(drawIfMouseMoving, 17);
         
         function degToRad(deg) {
             return deg * (Math.PI / 180);

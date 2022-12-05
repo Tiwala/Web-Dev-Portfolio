@@ -1,20 +1,3 @@
-.linksDiv {
-    width: 40px;
-    position: fixed;
-    bottom: 20px;
-    right: auto;
-    left: 40px;
-}
-
-.list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
 .listItem {
     display: list-item;
     margin: 10px;
@@ -31,23 +14,75 @@
     transform: scale(1.1);
 }
 
-.emailDiv {
-    width: 40px;
-    position: fixed;
-    bottom: 20px;
-    right: 40px;
-    left: auto;
-}
-
-.email {
-    writing-mode: vertical-rl;
-    margin: 10px;
-    text-decoration: underline;
-    letter-spacing: 0.1em;
-    transition: 0.25s;
-}
 
 .email:hover {
     color: white;
     cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .linksDiv {
+        width: 40px;
+        position: fixed;
+        bottom: 20px;
+        right: auto;
+        left: 40px;
+    }
+    
+    .list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .emailDiv {
+        width: 40px;
+        position: fixed;
+        bottom: 20px;
+        right: 40px;
+        left: auto;
+    }
+    
+    .email {
+        writing-mode: vertical-rl;
+        margin: 10px;
+        text-decoration: underline;
+        letter-spacing: 0.1em;
+        transition: 0.25s;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .linksDiv {
+        position: relative;
+        margin: auto;
+    }
+
+    .list {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .emailDiv {
+        position: relative;
+        margin: auto;
+    }
+
+    .email {
+        margin: 10px;
+        text-decoration: underline;
+        letter-spacing: 0.1em;
+        transition: 0.25s;
+    }
 }

@@ -1,28 +1,37 @@
-import React, { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import styles from '../../styles/About.module.css'
 
 const About = () => {
-    const [cloudRadius, setCloudRadius] = useState(225);
     const [windowSize, setWindowSize] = useState(false)
 
     // When using tagcloud, you have to do npm install TagCloud --save-dev
     // Because of types error you have to use require
     const TagCloud = require('TagCloud')
     const texts = [
-        'JavaScript', 'ES5', 'ES6', 'React.js', 'Next.js', 'MongoDB',
+        'JavaScript', 'React.js', 'Next.js', 'MongoDB',
         'HTML5', 'CSS3', 'Node.js', 'Express', 'SQL', 'MySQL', 'PostgreSQL',
         'REST', 'Surge', 'Heroku', 'Render', 'Git', 'GitHub', 'Mocha', 'Chai', 'Jest',
         'npm', 'Bootstrap', 'Tailwind', 'Auth0', 'AJAX', 'Axios', 'Redux', 'Recoil',
     ]
     const options = {
-        radius: cloudRadius,
+        radius: 225,
         maxSpeed: 'normal',
         initSpeed: 'normal',
         direction: 225,
         keep: true,
     };
 
+    const options2 = {
+        radius: 125,
+        maxSpeed: 'normal',
+        initSpeed: 'normal',
+        direction: 225,
+        keep: true,
+    }
+
     const IsTagCloudLoaded = useRef(false);
+
+    const IsTagCloud2Loaded = useRef(false);
 
     useEffect(() => {
         // If TagCloud is already there, ends useEffect
@@ -32,6 +41,15 @@ const About = () => {
         TagCloud('.tagCloud', texts, options);
 
         IsTagCloudLoaded.current = true;
+    })
+
+    useEffect(() => {
+        // 2nd invisible TagCloud depending on screen width
+        if (IsTagCloud2Loaded.current) return;
+
+        TagCloud('.tagCloud2', texts, options2);
+
+        IsTagCloud2Loaded.current = true;
     })
     
 
@@ -58,6 +76,7 @@ const About = () => {
             </div>
             <div className={styles.skills}>
                 <span className='tagCloud' id='skillsCanvas'></span>
+                <span className='tagCloud2' id='skillsCanvas2'></span>
             </div>
             <div className={styles.spacer}></div>
         </div>

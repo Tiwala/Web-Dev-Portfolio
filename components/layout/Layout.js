@@ -1,4 +1,3 @@
-import React from 'react';
 import BackgroundEffect from './BackgroundEffect';
 
 const Layout = ({children}) => {

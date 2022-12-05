@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import styles from '../../styles/Projects.module.css'
 import Image from 'next/image'
 
@@ -37,9 +37,13 @@ const Projects = () => {
                     setWidth(526.4);
                     setHeight(296);
                 }
-                if (window.innerWidth < 660) {
+                if (window.innerWidth < 660 && window.innerWidth >= 600) {
                     setWidth(460.6);
                     setHeight(259);
+                }
+                if (window.innerWidth < 600) {
+                    setWidth(300);
+                    setHeight(169);
                 }
             }
         }
@@ -99,7 +103,7 @@ const Projects = () => {
             <div className={styles.projectImage}>
                 <a className={styles.imageLink} href="https://steam-clone-zqr0.onrender.com/" rel="noopener noreferrer" target="_blank">
                     <div className={styles.overlay} style={{width: width, height: height}}></div>
-                    <Image src="/SteamClone.png" width={width} height={height} layout="responsive"/>
+                    <Image src="/SteamClone.png" alt="Image for Steam Clone Website" width={width} height={height} layout="responsive"/>
                 </a>
             </div>
         </div>
@@ -140,9 +144,9 @@ const Projects = () => {
                 </div>
             </div>
             <div className={styles.projectImage}>
-                <a className={styles.imageLink} href="https://instructor-hub.onrender.com/" rel="noopener noreferrer" target="_blank">
+                <a className={styles.imageLink} href="https://drive.google.com/file/d/1WbfoHGMt5sVqZwbGxQvH-ploWGzTEhQ7/view?usp=share_link" rel="noopener noreferrer" target="_blank">
                     <div className={styles.overlay} style={{width: width, height: height}}></div>
-                    <Image src="/InstructorHub.png" width={width} height={height}/>
+                    <Image src="/InstructorHub.png" alt="Image for Instructor Hub Website" width={width} height={height}/>
                 </a>
             </div>
         </div>
@@ -185,7 +189,7 @@ const Projects = () => {
             <div className={styles.projectImage}>
                 <a className={styles.imageLink} href="https://nameless-basin-84867.herokuapp.com/" rel="noopener noreferrer" target="_blank">
                     <div className={styles.overlay} style={{width: width, height: height}}></div>
-                    <Image src="/WeebList.png" width={width} height={height}/>
+                    <Image src="/WeebList.png" alt="Image for Weeb List Website" width={width} height={height}/>
 
                 </a>
             </div>
@@ -229,7 +233,7 @@ const Projects = () => {
             <div className={styles.projectImage}>
                 <a className={styles.imageLink} href="https://trash-garbage.surge.sh/" rel="noopener noreferrer" target="_blank">
                     <div className={styles.overlay} style={{width: width, height: height}}></div>
-                    <Image src="/1stGenPokeDex.png" width={width} height={height}/>
+                    <Image src="/1stGenPokeDex.png" alt="Image for 1st Generation Pokedex Website" width={width} height={height}/>
                 </a>
             </div>
         </div>
@@ -277,7 +281,7 @@ const Projects = () => {
             <div className={styles.projectImage}>
                 <a className={styles.imageLink} href="https://steam-clone-zqr0.onrender.com/" rel="noopener noreferrer" target="_blank">
                     <div className={styles.overlay} style={{width: width, height: height}}></div>
-                    <Image src="/SteamClone.png" width={width} height={height} layout="responsive"/>
+                    <Image src="/SteamClone.png" alt="Image for Steam Clone Website" width={width} height={height} layout="responsive"/>
                 </a>
             </div>
         </div>
@@ -320,7 +324,7 @@ const Projects = () => {
             <div className={styles.projectImage}>
                 <a className={styles.imageLink} href="https://instructor-hub.onrender.com/" rel="noopener noreferrer" target="_blank">
                     <div className={styles.overlay} style={{width: width, height: height}}></div>
-                    <Image src="/InstructorHub.png" width={width} height={height}/>
+                    <Image src="/InstructorHub.png" alt="Image for Instructor Hub Website" width={width} height={height}/>
                 </a>
             </div>
         </div>
@@ -363,7 +367,7 @@ const Projects = () => {
             <div className={styles.projectImage}>
                 <a className={styles.imageLink} href="https://nameless-basin-84867.herokuapp.com/" rel="noopener noreferrer" target="_blank">
                     <div className={styles.overlay} style={{width: width, height: height}}></div>
-                    <Image src="/WeebList.png" width={width} height={height}/>
+                    <Image src="/WeebList.png" alt="Image for Weeb List Website" width={width} height={height}/>
 
                 </a>
             </div>
@@ -407,7 +411,7 @@ const Projects = () => {
             <div className={styles.projectImage}>
                 <a className={styles.imageLink} href="https://trash-garbage.surge.sh/" rel="noopener noreferrer" target="_blank">
                     <div className={styles.overlay} style={{width: width, height: height}}></div>
-                    <Image src="/1stGenPokeDex.png" width={width} height={height}/>
+                    <Image src="/1stGenPokeDex.png" alt="Image for 1st Generation Pokedex Website" width={width} height={height}/>
                 </a>
             </div>
         </div>

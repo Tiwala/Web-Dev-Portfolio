@@ -39,7 +39,29 @@ svg:hover {
   fill: white;
 }
 
-.tagCloud {
-  color: rgb(182, 88, 217);
-  text-shadow: 0 0 2px rgb(182, 88, 217);
+@media (min-width: 620px) {
+  #skillsCanvas {
+    color: rgb(182, 88, 217);
+    text-shadow: 0 0 2px rgb(182, 88, 217);
+  }
+
+  #skillsCanvas2 {
+    display: none;
+    color: rgb(182, 88, 217);
+    text-shadow: 0 0 2px rgb(182, 88, 217);
+  }
 }
+
+@media (max-width: 619px) {
+  #skillsCanvas {
+    display: none;
+    color: rgb(182, 88, 217);
+    text-shadow: 0 0 2px rgb(182, 88, 217);
+  }
+
+  #skillsCanvas2 {
+    color: rgb(182, 88, 217);
+    text-shadow: 0 0 2px rgb(182, 88, 217);
+  }
+}
+

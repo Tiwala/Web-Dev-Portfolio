@@ -35,6 +35,8 @@
     }
 
     .logoDiv {
+        margin-top: auto;
+        margin-bottom: auto;
         margin-left: 30px;
     }
 
@@ -68,6 +70,10 @@
         box-shadow: 0 10px 30px -10px black;
         z-index: 1;
         position: relative;
+    }
+
+    .logoDiv {
+        margin: auto 0;
     }
 
     .headerDiv {

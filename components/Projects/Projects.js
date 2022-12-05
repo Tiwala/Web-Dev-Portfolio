@@ -41,9 +41,13 @@ const Projects = () => {
                     setWidth(460.6);
                     setHeight(259);
                 }
-                if (window.innerWidth < 600) {
+                if (window.innerWidth < 600 && window.innerWidth >= 370) {
                     setWidth(300);
                     setHeight(169);
+                }
+                if (window.innerWidth < 370) {
+                    setWidth(240);
+                    setHeight(135);
                 }
             }
         }

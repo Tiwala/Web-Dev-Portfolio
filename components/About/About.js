@@ -63,11 +63,11 @@ const About = () => {
                 <div className={styles.about}>
                     <div className={styles.text}>
                             Hi! <br/>
-                            I'm Gerard, and I am a multi-faceted individual who creates things on the web. <br/>
-                            I've always been interested in the sciences, studying psychology and medicine, but somewhere along the way, software development captured my heart, and it never let go.
+                            I&apos;m Gerard, and I am a multi-faceted individual who creates things on the web. <br/>
+                            I&apos;ve always been interested in the sciences, studying psychology and medicine, but somewhere along the way, software development captured my heart, and it never let go.
                             <br/>
                             <br/>
-                            My favorite aspect of this field is the fact that we can create solutions to problems great and small, making people's lives easier, and we can make that solution pretty while we're at it.
+                            My favorite aspect of this field is the fact that we can create solutions to problems great and small, making people&apos;s lives easier, and we can make that solution pretty while we&apos;re at it.
                             <br/>
                             <br/>
                             I hope to one day create something that can make a lot of people happy.

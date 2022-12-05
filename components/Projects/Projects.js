@@ -67,7 +67,7 @@ const Projects = () => {
                 <h3 className={styles.projectTitle}>Steam Page Clone</h3>
                 <div className={styles.projectText}>
                     <p>
-                        Me and my team created a full stack working clone of Hogwarts Legacy's Steam page, with all links and effects fully functional. <br/>
+                        Me and my team created a full stack working clone of Hogwarts Legacy&apos;s Steam page, with all links and effects fully functional. <br/>
                         <br/>
                         Almost indistinguishable from the original page, we wanted to test our ability to replicate an application regardless of framework and technologies.
                     </p>
@@ -112,7 +112,7 @@ const Projects = () => {
                 <h3 className={styles.projectTitle}>Galvanize Instructor Hub</h3>
                 <div className={styles.projectText}>
                     <p>
-                        The Galvanize Instructor Hub is an application that streamlines an instructor's task of recording and organizing data on student performance, synchronizing it with the Asana API. <br/>
+                        The Galvanize Instructor Hub is an application that streamlines an instructor&apos;s task of recording and organizing data on student performance, synchronizing it with the Asana API. <br/>
                         <br/>
                         Through the application, instructors can create classes and profiles for students from the ground up, graphically illustrate data recorded from class and student performance, provide commentary feedback, and randomly generate groups for class work.
                     </p>
@@ -199,7 +199,7 @@ const Projects = () => {
                 <h3 className={styles.projectTitle}>1st Gen Pokedex</h3>
                 <div className={styles.projectText}>
                     <p>
-                        The 1st Generation Pokedex app is a frontend application that shows the first 151 Pokemon, with their respective Pokedex information, including each individual Pokemon's cry from the original GameBoy Color games. <br/>
+                        The 1st Generation Pokedex app is a frontend application that shows the first 151 Pokemon, with their respective Pokedex information, including each individual Pokemon&apos;s cry from the original GameBoy Color games. <br/>
                         All information was fetched externally from the PokeAPI. <br/>
                         <br/>
                         This was my very first MVP, and while it is quite basic, I love this project, as it is my childhood passion in its purest form put in practice.
@@ -245,7 +245,7 @@ const Projects = () => {
                 <h3 className={styles.projectTitle}>Steam Page Clone</h3>
                 <div className={styles.projectText}>
                     <p>
-                        Me and my team created a full stack working clone of Hogwarts Legacy's Steam page, with all links and effects fully functional. <br/>
+                        Me and my team created a full stack working clone of Hogwarts Legacy&apos;s Steam page, with all links and effects fully functional. <br/>
                         <br/>
                         Almost indistinguishable from the original page, we wanted to test our ability to replicate an application regardless of framework and technologies.
                     </p>
@@ -290,7 +290,7 @@ const Projects = () => {
                 <h3 className={styles.projectTitle}>Galvanize Instructor Hub</h3>
                 <div className={styles.projectText}>
                     <p>
-                        The Galvanize Instructor Hub is an application that streamlines an instructor's task of recording and organizing data on student performance, synchronizing it with the Asana API. <br/>
+                        The Galvanize Instructor Hub is an application that streamlines an instructor&apos;s task of recording and organizing data on student performance, synchronizing it with the Asana API. <br/>
                         <br/>
                         Through the application, instructors can create classes and profiles for students from the ground up, graphically illustrate data recorded from class and student performance, provide commentary feedback, and randomly generate groups for class work.
                     </p>
@@ -377,7 +377,7 @@ const Projects = () => {
                 <h3 className={styles.projectTitle}>1st Gen Pokedex</h3>
                 <div className={styles.projectText}>
                     <p>
-                        The 1st Generation Pokedex app is a frontend application that shows the first 151 Pokemon, with their respective Pokedex information, including each individual Pokemon's cry from the original GameBoy Color games. <br/>
+                        The 1st Generation Pokedex app is a frontend application that shows the first 151 Pokemon, with their respective Pokedex information, including each individual Pokemon&apos;s cry from the original GameBoy Color games. <br/>
                         All information was fetched externally from the PokeAPI. <br/>
                         <br/>
                         This was my very first MVP, and while it is quite basic, I love this project, as it is my childhood passion in its purest form put in practice.

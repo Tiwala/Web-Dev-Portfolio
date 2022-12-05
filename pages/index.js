@@ -1,11 +1,11 @@
 import Head from 'next/head'
-import Header from '../components/Layout/Header'
+import Header from '../components/layout/Header'
 import styles from '../styles/Home.module.css'
 import MainBody from '../components/MainBody/MainBody'
 import About from '../components/About/About'
 import Projects from '../components/Projects/Projects'
 import Contact from '../components/Contact/Contact'
-import Links from '../components/Layout/Links'
+import Links from '../components/layout/Links'
 
 export default function Home() {
 

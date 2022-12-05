@@ -9,7 +9,7 @@ const Header = () => {
     <div className={styles.header}>
       <div className={styles.logoDiv}>
           <a href="">
-            <Image src='/Logo.png' alt="Gerard San Juan Logo" width={90} height={90}/>
+            <Image src='/./Logo.png' alt="Gerard San Juan Logo" width={90} height={90}/>
           </a>
       </div>
       <div className={styles.headerDiv}>

@@ -6,6 +6,7 @@ import About from '../components/About/About'
 import Projects from '../components/Projects/Projects'
 import Contact from '../components/Contact/Contact'
 import Links from '../components/layout/Links'
+import favicon from '../public/favicon.ico'
 
 export default function Home() {
 
@@ -14,7 +15,7 @@ export default function Home() {
       <Head>
         <title>Gerard&apos;s Portfolio</title>
         <meta name="description" content="Gerard San Juan's Web Dev Portfolio" />
-        <link rel="icon" href="/./favicon.ico" />
+        <link rel="icon" href={favicon} />
       </Head>
       <Header/>
       <MainBody/>

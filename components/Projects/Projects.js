@@ -109,7 +109,7 @@ const Projects = () => {
                 </div>
             </div>
             <div className={styles.projectImage}>
-                <a className={styles.imageLink} href="https://steam-clone-zqr0.onrender.com/" rel="noopener noreferrer" target="_blank">
+                <a className={styles.imageLink} href="https://steamclonehosted-production.up.railway.app/" rel="noopener noreferrer" target="_blank">
                     <div className={styles.overlay} style={{width: width, height: height}}></div>
                     <Image src={steamClone} alt="Image for Steam Clone Website" width={width} height={height} layout="responsive"/>
                 </a>

@@ -195,7 +195,7 @@ const Projects = () => {
                 </div>
             </div>
             <div className={styles.projectImage}>
-                <a className={styles.imageLink} href="https://nameless-basin-84867.herokuapp.com/" rel="noopener noreferrer" target="_blank">
+                <a className={styles.imageLink} href="https://theweeblist.up.railway.app" rel="noopener noreferrer" target="_blank">
                     <div className={styles.overlay} style={{width: width, height: height}}></div>
                     <Image src={weebList} alt="Image for Weeb List Website" width={width} height={height}/>
 

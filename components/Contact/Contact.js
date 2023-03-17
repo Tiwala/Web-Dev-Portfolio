@@ -7,7 +7,7 @@ const Contact = () => {
           <h1>Contact Me</h1>
           <div className={styles.contactText}>
               <p>
-                  I am currently open to opportunities, and would love to discuss any roles you might have for me!
+                  Thank you for checking out my portfolio!
                   Please feel free to say hi, and I&apos;ll definitely message back!
               </p>
           </div>

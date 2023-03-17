@@ -8,7 +8,7 @@ const About = () => {
     // Because of types error you have to use require
     const TagCloud = require('TagCloud')
     const texts = [
-        'JavaScript', 'React.js', 'Next.js', 'MongoDB',
+        'JavaScript', 'TypeScript', 'React.js', 'Next.js', 'MongoDB',
         'HTML5', 'CSS3', 'Node.js', 'Express', 'SQL', 'MySQL', 'PostgreSQL',
         'REST', 'Surge', 'Heroku', 'Render', 'Git', 'GitHub', 'Mocha', 'Chai', 'Jest',
         'npm', 'Bootstrap', 'Tailwind', 'Auth0', 'AJAX', 'Axios', 'Redux', 'Recoil',

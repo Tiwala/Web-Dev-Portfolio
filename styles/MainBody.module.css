@@ -9,7 +9,6 @@
     color: rgb(193, 189, 189);
 }
 
-
 .normalText {
     font-weight: bold;
     font-size: 1.1rem;
@@ -22,11 +21,17 @@
 }
 
 .paragraph {
-    max-width: 60%;
+    max-width: 70%;
     flex-wrap: wrap;
     font-weight: 200;
 }
 
-@media (min-width: 1300px) {
-    
+@media (max-width: 767px) {
+    .name {
+        font-size: 2rem;
+    }
+
+    .paragraph {
+        max-width: 100%;
+    }
 }

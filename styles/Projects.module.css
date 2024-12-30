@@ -79,12 +79,17 @@
         justify-content: center;
         align-items: center;
         margin: 5px;
+        padding: 10px;
         transition: transform 0.25s;
     }
     
     .tags:hover {
         cursor: pointer;
         transform: scale(1.1);
+    }
+
+    .tags:hover svg {
+        fill: white;
     }
     
     .imageLink {
@@ -191,6 +196,7 @@
         position: relative;
         margin-top: 10px;
         margin-bottom: 20px;
+        padding: 10px;
     }
     
     .tags {
@@ -198,12 +204,17 @@
         justify-content: center;
         align-items: center;
         margin: 5px;
+        padding: 10px;
         transition: transform 0.25s;
     }
     
     .tags:hover {
         cursor: pointer;
         transform: scale(1.1);
+    }
+
+    .tags:hover svg {
+        fill: white;
     }
     
     .imageLink {

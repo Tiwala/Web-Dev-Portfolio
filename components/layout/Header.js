@@ -24,7 +24,7 @@ const Header = () => {
           <Link className={styles.nav} href='#contact'>
               Contact
           </Link>
-          <Link className={styles.nav} href='https://drive.google.com/file/d/1FIW2agnwP8Fn9aQHo8jxSMfzEsR4R_1n/view?usp=sharing' target="_blank" rel="noreferrer">
+          <Link className={styles.nav} title="My Resume" href='https://drive.google.com/file/d/1FIW2agnwP8Fn9aQHo8jxSMfzEsR4R_1n/view?usp=sharing' target="_blank" rel="noreferrer">
               Resume
           </Link>
         </div>

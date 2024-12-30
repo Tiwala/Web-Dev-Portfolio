@@ -6,7 +6,7 @@ const Links = () => {
       <div className={styles.linksDiv}>
           <ul className={styles.list}>
               <li className={styles.listItem}>
-                  <a className={styles.tags} href="https://github.com/Tiwala" aria-label="GitHub" target="_blank" rel="noreferrer">
+                  <a className={styles.tags} title="Github" href="https://github.com/Tiwala" aria-label="GitHub" target="_blank" rel="noreferrer">
                     <svg fill="rgb(193, 189, 189)" width="30" height="30" viewBox="0 0 496 512">
                         <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 
                           4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 
@@ -23,7 +23,7 @@ const Links = () => {
                   </a>
               </li>
               <li className={styles.listItem}>
-                  <a className={styles.tags} href="https://linkedin.com/in/gerardsanjuan" aria-label="LinkedIn" target="_blank" rel="noreferrer">
+                  <a className={styles.tags} title="LinkedIn" href="https://linkedin.com/in/gerardsanjuan" aria-label="LinkedIn" target="_blank" rel="noreferrer">
                     <svg fill="rgb(193, 189, 189)" width="30" height="30"viewBox="0 0 32 32">
                       <rect height="23" width="7" y="9"/>
                       <path d="M24.003,9C20,9,18.89,10.312,18,12V9h-7v23h7V19c0-2,0-4,3.5-4s3.5,2,3.5,4v13h7V19C32,13,31,9,24.003,9z"/>
@@ -34,7 +34,7 @@ const Links = () => {
           </ul>
       </div>
       <div className={styles.emailDiv}>
-        <a href="mailto:gerard.c.sanjuan@gmail.com" className={styles.email}>
+        <a title="E-mail me!" href="mailto:gerard.c.sanjuan@gmail.com" className={styles.email}>
           gerard.c.sanjuan@gmail.com
         </a>
       </div>

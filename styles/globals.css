@@ -36,9 +36,9 @@ a {
   box-sizing: border-box;
 }
 
-svg:hover {
+/* svg:hover {
   fill: white;
-}
+} */
 
 @media (min-width: 620px) {
   #skillsCanvas {

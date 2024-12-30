@@ -1,7 +1,7 @@
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     min-height: 100vh;
     margin: 0px auto;
     width: 80%;
@@ -10,23 +10,63 @@
 }
 
 .normalText {
+    animation-delay: 2s;
+    animation: fadeIn 2s forwards;
     font-weight: bold;
     font-size: 1.1rem;
+    opacity: 0;
 }
 
 .name {
     font-size: 4rem;
     color: #fff;
     font-weight: bold;
+    transition: transform 0.25s;
+    opacity: 0;
+    transform: translateX(-10%);
+    animation: fadeInLeftToRight 1s forwards 0.25s;
 }
 
 .paragraph {
+    animation: fadeIn 2s forwards 1s;
     max-width: 70%;
     flex-wrap: wrap;
     font-weight: 200;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInLeftToRight {
+    from {
+        opacity: 0;
+        transform: translateX(-10%)
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding-top: 104px;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 767px) {
+    .container {
+        margin: 40% auto;
+    }
+
     .name {
         font-size: 2rem;
     }

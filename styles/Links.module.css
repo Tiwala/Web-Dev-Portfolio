@@ -1,6 +1,7 @@
 .listItem {
     display: list-item;
-    margin: 10px;
+    /* margin: 20px; */
+    padding: 10px;
 }
 
 .tags {
@@ -9,15 +10,37 @@
     transition: transform 0.25s;
 }
 
-.tags:hover {
+.listItem:hover .tags {
     cursor: pointer;
     transform: scale(1.1);
+}
+
+.listItem:hover svg {
+    fill: white;
 }
 
 
 .email:hover {
     color: white;
     cursor: pointer;
+}
+
+.email:hover:after {
+    transform: scaleY(1);
+    transform-origin: top left;
+}
+
+.email:after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    transform: scaleY(0);
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
 }
 
 @media (min-width: 768px) {
@@ -45,13 +68,34 @@
         right: 40px;
         left: auto;
     }
+
+    .tags {
+        transition: transform 0.25s;
+        animation: fadeInFall 2s forwards;
+        opacity: 0;
+        transform: translateY(-100px)
+    }
     
     .email {
         writing-mode: vertical-rl;
         margin: 10px;
-        text-decoration: underline;
         letter-spacing: 0.1em;
-        transition: 0.25s;
+        transition: transform 0.25s;
+        animation: fadeInFall 2s forwards;
+        opacity: 0;
+        transform: translateY(-100px);
+        padding: 10px;
+    }
+
+    @keyframes fadeInFall {
+        from {
+            opacity: 0;
+            transform: translateY(-100px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 }
 

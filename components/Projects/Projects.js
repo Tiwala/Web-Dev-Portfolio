@@ -287,7 +287,7 @@ const Projects = () => {
                 </div>
             </div>
             <div className={styles.projectImage}>
-                <a className={styles.imageLink} href="https://steam-clone-zqr0.onrender.com/" rel="noopener noreferrer" target="_blank">
+                <a className={styles.imageLink} href="https://steamclonehosted-production.up.railway.app/" rel="noopener noreferrer" target="_blank">
                     <div className={styles.overlay} style={{width: width, height: height}}></div>
                     <Image src={steamClone} alt="Image for Steam Clone Website" width={width} height={height} layout="responsive"/>
                 </a>
@@ -330,7 +330,7 @@ const Projects = () => {
                 </div>
             </div>
             <div className={styles.projectImage}>
-                <a className={styles.imageLink} href="https://instructor-hub.onrender.com/" rel="noopener noreferrer" target="_blank">
+                <a className={styles.imageLink} href="https://drive.google.com/file/d/1WbfoHGMt5sVqZwbGxQvH-ploWGzTEhQ7/view?usp=share_link" rel="noopener noreferrer" target="_blank">
                     <div className={styles.overlay} style={{width: width, height: height}}></div>
                     <Image src={instructorHub} alt="Image for Instructor Hub Website" width={width} height={height}/>
                 </a>
@@ -373,7 +373,7 @@ const Projects = () => {
                 </div>
             </div>
             <div className={styles.projectImage}>
-                <a className={styles.imageLink} href="https://nameless-basin-84867.herokuapp.com/" rel="noopener noreferrer" target="_blank">
+                <a className={styles.imageLink} href="https://theweeblist.up.railway.app" rel="noopener noreferrer" target="_blank">
                     <div className={styles.overlay} style={{width: width, height: height}}></div>
                     <Image src={weebList} alt="Image for Weeb List Website" width={width} height={height}/>
 

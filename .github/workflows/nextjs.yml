@@ -35,6 +35,7 @@ jobs:
           else
             echo "Unable to determine package manager"
             exit 1
+          fi
           echo "Detected manager: ${{ steps.detect-package-manager.outputs.manager }}"
           echo "Detected command: ${{ steps.detect-package-manager.outputs.command }}"
 

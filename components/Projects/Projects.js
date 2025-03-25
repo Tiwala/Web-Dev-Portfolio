@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import styles from '../../styles/Projects.module.css'
 import Image from 'next/image'
+import hotStoveCircuit from '../../public/HotStoveCircuit.png'
 import steamClone from '../../public/SteamClone.png'
 import instructorHub from '../../public/InstructorHub.png'
 import weebList from '../../public/WeebList.png'
@@ -70,6 +71,32 @@ const Projects = () => {
         </div>
         {windowSize ? (
         <>
+        <div className={styles.project}>
+            <div className={styles.projectDescription}>
+                <h3 className={styles.projectTitle}>Hot Stove Circuit</h3>
+                <div className={styles.projectText}>
+                    <p>
+                        Hot Stove Circuit is an event series that brings gourmands and chefs together for the ultimate culinary experience. <br/>
+                        <br/>
+                        The website is used to display information about scheduled events, and allow users to register and purchase tickets for the said events.
+                    </p>
+                </div>
+                <ul className={styles.techList}>
+                    <li>Flask</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Gitlab</li>
+                    <li>Docker</li>
+                    <li>PSQL</li>
+                </ul>
+            </div>
+            <div className={styles.projectImage}>
+                <a className={styles.imageLink} href="https://hotstovecircuit.buzz" rel="noopener noreferrer" target="_blank">
+                    <div className={styles.overlay} style={{width: width, height: height}}></div>
+                    <Image src={hotStoveCircuit} alt="Image for Hot Stove Circuit Website" width={width} height={height} layout="responsive"/>
+                </a>
+            </div>
+        </div>
         <div className={styles.project}>
             <div className={styles.projectDescription}>
                 <h3 className={styles.projectTitle}>Steam Page Clone</h3>
